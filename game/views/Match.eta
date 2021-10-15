@@ -1,0 +1,243 @@
+<% layout('layouts/MainLayout')%>
+    <body>
+        <main id="main-board">
+            <article id="game">
+               <section id="board">
+                    <div id="18" class="square-purple"></div>
+                    <div id="19" class="square-red"></div>
+                    <div id="20" class="square-blue"></div>
+                    <div id="21" class="square-purple"></div>
+                    <div id="22" class="square-green"></div>
+                    <div id="23" class="square-blue"></div>
+                    <div id="24" class="square-yellow"></div>
+                    <div id="25" class="square-purple"></div>
+                    <div id="26" class="square-blue"></div>
+                    <div id="27" class="square-yellow"></div>
+                    <div id="28" class="square-green"></div>
+                    <div id="29" class="square-red"></div>
+                    <div id="30" class="square-purple"></div>
+                    <div id="31" class="square-red"></div>
+                    <div id="32" class="square-green"></div>
+                    <div id="17" class="square-yellow"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div id="33" class="square-yellow"></div>
+                    <div id="16" class="square-blue"></div>
+                    <div class="square-gray"></div>
+                    <div id="50" class="square-green"></div>
+                    <div id="51" class="square-yellow"></div>
+                    <div id="52" class="square-purple"></div>
+                    <div id="53" class="square-green"></div>
+                    <div id="54" class="square-red"></div>
+                    <div id="55" class="destiny-square">
+                        <img id = "destiny" src="img/destiny.png" alt="Destiny of the birds"/>
+                    </div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div id="34" class="square-purple"></div>
+                    <div id="15" class="square-purple"></div>
+                    <div class="square-gray"></div>
+                    <div id="49" class="square-red"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div id="35" class="square-red"></div>
+                    <div id="14" class="square-green"></div>
+                    <div class="square-gray"></div>
+                    <div id="48" class="square-blue"></div>
+                    <div id="47" class="square-green"></div>
+                    <div id="46" class="square-red"></div>
+                    <div id="45" class="square-purple"></div>
+                    <div id="44" class="square-yellow"></div>
+                    <div id="43" class="square-red"></div>
+                    <div id="42" class="square-blue"></div>
+                    <div id="41" class="square-red"></div>
+                    <div id="40" class="square-green"></div>
+                    <div id="39" class="square-purple"></div>
+                    <div id="38" class="square-red"></div>
+                    <div id="37" class="square-yellow"></div>
+                    <div id="36" class="square-blue"></div>
+                    <div id="13" class="square-yellow"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div class="square-gray"></div>
+                    <div id="12" class="square-purple"></div>
+                    <div id="11" class="square-red"></div>
+                    <div id="10" class="square-yellow"></div>
+                    <div id="9" class="square-purple"></div>
+                    <div id="8" class="square-green"></div>
+                    <div id="7" class="square-yellow"></div>
+                    <div id="6" class="square-blue"></div>
+                    <div id="5" class="square-red"></div>
+                    <div id="4" class="square-green"></div>
+                    <div id="3" class="square-blue"></div>
+                    <div id="2" class="square-yellow"></div>
+                    <div id="1" class="square-red"></div>
+                    <div id="0" class="square-green"></div>
+                    <div class="square-gray"></div>
+                    <div id="deck">
+                        <button id="button-take-card" disabled="disabled">T.C</button>   
+                    </div>
+               </section>  <!-- section board content -->
+
+                <section id="sunrise-track">
+                    <div id="sunrise-track-square1" class="sunrise-track-square" >
+                        <img id = "sunrise-track-sun" src="img/sun.png" alt="Sun of sunrise track"/>
+                    </div>
+                    <div id="sunrise-track-square2" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square3" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square4" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square5" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square6" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square7" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square8" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square9" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square10" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square11" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square12" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square13" class="sunrise-track-square" ></div>
+                    <div id="sunrise-track-square14" class="sunrise-track-square" ></div>
+                </section> <!-- section sunrise-track content -->
+            </article> <!-- article game content -->
+
+            <article id="foot-main">
+
+                <button id="button-leave">Leave</button> 
+
+                <div id="leader-board">
+                    <div class="player">
+                        <h2 id="first-place">1.</h2><h3 id="first-player">-</h3>
+                    </div>
+                    <div class="player">
+                        <h2 id="second-place">2.</h2><h3 id="second-player">-</h3>
+                    </div>
+                    <div class="player">
+                        <h2 id="third-place">3.</h2><h3 id="third-player">-</h3>
+                    </div>
+                </div> 
+            </article> <!-- article leader-board -->
+
+        </main> <!-- main main-content -->
+
+        <!-- The following items are the modal of this page -->
+        <article id="question-modal">
+            <div id="container-modal">
+                <div id="question-header">
+                    <h2 id="question"> Question </h2>            
+                    <div id="circle-time">
+                        <h2 id="time"> </h2>
+                    </div>
+                </div>
+                <div id="box-option1" class="option">
+                    <input id="radio1" class="radio-question" type="radio" name="radio-question-name"></input>
+                    <h3 id="option1"> Option 1 </h3>
+                </div>
+                <div id="box-option2" class="option">
+                    <input id="radio2" class="radio-question" type="radio" name="radio-question-name"></input>
+                    <h3 id="option2"> Option 2 </h3>
+                </div>
+                <div id="box-option3" class="option">
+                    <input id="radio3" class="radio-question" type="radio" name="radio-question-name"></input>
+                    <h3 id="option3"> Option 3</h3>
+                </div>
+                <div id="box-option4" class="option">
+                    <input id="radio4" class="radio-question" type="radio" name="radio-question-name"></input>
+                    <h3 id="option4"> Option 4</h3>
+                </div>
+                <div id="button-container">
+                    <button id="button-answer-question" class="button-accept-modal">Answer</button>
+                </div>
+            </div>
+        </article><!-- article question-modal -->
+        
+        <article id="game-over-modal">
+            <div class="container-game-over-modal">
+                <h2 class="modal-title">Game Over!</h2>
+                <img id = "gameOver_gif" src="img/sad-bird.gif" alt="Game Over picture"/>
+                <div class="button-box">
+                    <button  class="button-blue" id="button-continue">Continue</button>
+                    <button  class="button-red" id="button-quit">Quit Session</button>
+                </div>
+            </div>
+        </article><!-- article game-over-modal -->
+
+        <article id="podium-modal">
+            <div class="container-podium-modal">
+                <h2 class="modal-title">The winner is:</h2> 
+                <div id="winner"> <!-- se debe controlar luego en js-->
+                    <img id="img-avatar-winner" src="" alt="Avatar of the winner player"/>
+                    <h2 id="player-name-winner">Player nave won the game</h2>
+                </div>
+                <div class="button-box">
+                    <button  class="button-blue" id="button-continue2">Continue</button>
+                    <button  class="button-red" id="button-quit2">Quit Session</button>
+                </div>
+            </div>
+        </article><!-- article podium-modal -->
+
+        <article id="timeOut-question-modal">
+            <div class="container-timeOut-modal">
+                <h2 id="timeOut-title">Time Out!</h2>
+                <h3 id="timeOut-question-modal-content">The time to answer the question is over.</h3>
+                <!-- <h3 id="timeOut-question-modal-content">The question will be taken as incorrect.</h3> -->
+                <img id="img-timeout" src="img/timeout.jpg" alt="Time out bird"/>
+                <div class="button-box">
+                    <button  class="button-blue" id="button-OK">OK</button>
+                </div>
+            </div>
+        </article>
+       
+        <article id="help-modal">
+            <div id="container-help-modal">
+                <h3>Instructions</h3>
+                <p>
+                    When it is your turn, indicated by the arrow next to your username, take a colored card and answer the question, which will be related to the card color obtained. <br></br><br></br>              
+                    If you get the question right, your avatar will move to the closest square of the color obtained, otherwise, it goes back to the closest square of the color obtained.
+                </p>
+                <input id="button-accept-help" class="button-accept-modal" type="button" value="Accept"/>
+            </div>
+        </article> <!-- article help-modal -->
+
+        <article id="opponent-playing">
+            <div id="container-opponent-playing">
+                <h3 id="player-on-turn">
+                    Your opponent, the host, is playing. Please wait your turn ...
+                </h3>                
+            </div>
+        </article> <!-- article help-modal -->
+
+    </body> <!-- body content -->

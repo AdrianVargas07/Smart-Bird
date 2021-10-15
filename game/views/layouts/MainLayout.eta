@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="author" content="Sergio Ortega"/>
+		<meta name="generator" content="Sergio Ortega"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title><%= it.title %></title>
+        <link rel="icon" type="image/svg+xml" href="img/favicon.svg"/>
+<% it.stylesheets.forEach((stylesheet) => { %>
+		<link rel="stylesheet" media="screen" href="<%= stylesheet %>"/>
+<% }); %>
+	</head> <!-- head content -->
+	
+	<body>
+		<header class="site-header">
+            <div class="header-info">
+                <img class="web-site-logo" src="img/logo.png" alt="Web site icon"/>
+                <h1 class="header-title">Smart Bird!</h1>
+            </div>
+            <a class="credits-link" href="/Credits"> Credits</a>
+        </header> <!-- header content -->
+        <%~ it.body %>
+		<footer class="site-footer">   
+			<div class="footer-css-valido"> 
+				<h4 id="footer-title"> Web Applications Development</h4>
+					<a href="https://jigsaw.w3.org/css-validator/">
+						<img class="css-valido" src="./img/vcss-blue.gif" alt="¡CSS Válido!"/>
+					</a>
+			</div>
+			<div class="header-button-help">			
+				<button id="button-help" onclick="location.href='#help-page'">?</button>
+			</div>
+		</footer> <!-- footer content -->
+	</body> 
+		<script src='/socket.io/socket.io.js'></script>
+<% it.scripts.forEach((script) => { %>
+        <script src="<%= script %>" type="module" defer="defer"></script>
+<% }); %>
+	<!-- body content -->
+    
+</html>

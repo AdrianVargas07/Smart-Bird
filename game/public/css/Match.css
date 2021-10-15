@@ -1,0 +1,675 @@
+@import url(./common.css);
+
+/* Rules for board game */
+
+#main-board {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  flex-direction: column;
+  background: url("../img/background.png") no-repeat center / cover;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(15, 1fr);
+  grid-auto-rows: minmax(10vh, auto);
+  margin: 10px;
+}
+
+.square-red {
+  background: red;
+  border: 1px solid black;
+}
+
+.square-green {
+  background: green;
+  border: 1px solid black;
+}
+
+.square-blue {
+  background: blue;
+  border: 1px solid black;
+}
+
+.square-yellow {
+  background: yellow;
+  border: 1px solid black;
+}
+
+.square-purple {
+  background: purple;
+  border: 1px solid black;
+}
+
+.square-gray {
+  background: #c4c4c4;
+}
+
+.destiny-square {
+  background: white;
+}
+
+.square-red,
+.square-green,
+.square-blue,
+.square-yellow,
+.square-purple,
+.square-gray,
+.destiny-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+
+#destiny {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+}
+
+#deck {
+  display: flex;
+  text-align: center;
+  color: white;
+}
+
+#button-take-card {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  font-family: 'Righteous', cursive;
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  justify-content: center;
+}
+
+#button-take-card:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+#link_take_card {
+  width: 100%;
+  text-decoration: none;
+}
+
+.img-avatar {
+  width: 5%;
+  position: absolute;
+}
+
+.disapper {
+  opacity: 0;
+  transition: 2s ease;
+}
+
+.appear {
+  opacity: 1;
+  transition: 2s ease;
+}
+
+/* Rules sunrise square */
+
+#sunrise-track {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  grid-auto-rows: minmax(5vh, auto);
+  margin: 10px;
+  gap: 1px;
+}
+
+.sunrise-track-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sunrise-track-square1 {
+  background: black;
+}
+
+#sunrise-track-square2 {
+  background: #29220a;
+}
+
+#sunrise-track-square3 {
+  background: #393b0b;
+}
+
+#sunrise-track-square4 {
+  background: #5e610b;
+}
+
+#sunrise-track-square5 {
+  background: #868a08;
+}
+
+#sunrise-track-square6 {
+  background: #aeb404;
+}
+
+#sunrise-track-square7 {
+  background: #bbc203;
+}
+
+#sunrise-track-square8 {
+  background: #cbd103;
+}
+
+#sunrise-track-square9 {
+  background: #d2d806;
+}
+
+#sunrise-track-square10 {
+  background: #dce207;
+}
+
+#sunrise-track-square11 {
+  background: #e6ec07;
+}
+
+#sunrise-track-square12 {
+  background: #f2f807;
+}
+
+#sunrise-track-square13 {
+  background: #f2f903;
+}
+
+#sunrise-track-square14 {
+  background: #f8ff00;
+}
+
+#sunrise-track-sun {
+  width: 35%;
+  height: auto;
+}
+
+/* Rules for organize the leave button and leader board */
+
+#leaderBoard {
+  display: grid;
+  padding-top: 10px;
+  grid-template-columns: 1fr 5fr;
+}
+
+#button-leave {
+  color: white;
+  font-size: large;
+  justify-content: center;
+  background-color: red;
+  font-family: 'Righteous', cursive;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+#button-leave:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+#link_return_HostLobby {
+  width: auto;
+}
+
+#foot-main {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  color: white;
+  margin: 10px;
+}
+
+#leader-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: white;
+  margin: 10px;
+}
+
+#leader-board h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#leader-board h3 {
+  margin-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: larger;
+}
+
+.player {
+  display: flex;
+  padding-right: 15px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  border: 1px solid black;
+  background-color: #4d4f55;
+}
+
+/* #turn-player {
+  margin-right: 40px;
+  margin-left: 15px;
+  width: 30px;
+  height: 30px;
+} */
+
+#first-place {
+  color: gold;
+}
+
+#second-place {
+  color: silver;
+}
+
+#third-place {
+  color: #b45f04;
+}
+
+/* Css for the modals */
+
+/*  Question modal */
+
+#question-modal {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-modal {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  font-size: small;
+  border-radius: 5%;
+  margin: 3%;
+}
+
+#question-header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3px;
+  margin-right: 3px;
+  padding: 5%;
+  white-space: pre-wrap;
+}
+
+#circle-time {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#question-modal:target {
+  visibility: visible;
+}
+
+#question {
+  margin-left: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin: 3px;
+  background: gainsboro;
+  border-radius: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.radio-question {
+  margin-left: 10px;
+  margin-right: 15px;
+  height: auto;
+}
+
+#button-container {
+  display: flex;
+  justify-content: center;
+  margin: 10%;
+}
+
+#button-answer-question {
+  display: flex;
+  padding: 10px;
+  background: blue;
+  border-radius: 8px;
+  color: white;
+  font-family: 'Righteous', cursive;
+}
+
+#button-answer-question:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+/* Help modal */
+#help-modal {
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  top: 1%;
+  left: 72%;
+  margin-right: 10px;
+  background: darkgray;
+  visibility: hidden;
+}
+
+#help-modal:target {
+  visibility: visible;
+}
+
+#container-help-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#button-accept-help {
+  display: flex;
+  color: white;
+  background: blue;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Righteous', cursive;
+}
+
+#button-accept-help:hover {
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+#container-help-modal h3 {
+  display: flex;
+  justify-content: center;
+}
+
+/*  Game Over modal */
+
+#game-over-modal {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-over-modal:target {
+  visibility: visible;
+}
+
+.container-game-over-modal {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  font-size: small;
+  border-radius: 5%;
+  align-items: center;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+.container-podium-modal {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  font-size: small;
+  border-radius: 5%;
+  align-items: center;
+  padding-right: 3%;
+  padding-left: 3%;
+  width: 80%;
+}
+
+.container-timeOut-modal {
+  display: flex;
+  background: white;
+  flex-direction: column;
+  font-size: small;
+  border-radius: 5%;
+  align-items: center;
+  padding-right: 3%;
+  padding-left: 3%;
+}
+
+#modal-title {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  font-size: 2.5vw;
+}
+
+#gameOver_gif {
+  margin: 10px;
+  width: 75%;
+  height: 75%;
+}
+
+.button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 7%;
+  margin-bottom: 7%;
+  width: 90%;
+  height: 60%;
+}
+
+/*  Podium modal */
+
+#podium-modal {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#podium-modal:target {
+  visibility: visible;
+}
+
+#player-name-winner {
+  font-size: 10vw;
+  color: green;
+  margin: 10px;
+}
+
+#winner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-avatar-winner {
+  width: 10%;
+  height: 10%;
+}
+
+#timeOut-title {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  color: red;
+}
+
+/* Time Out Question Modal */
+#timeOut-question-modal {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+#timeOut-question-modal:target {
+  visibility: visible;
+}
+
+#timeOut-question-modal-content {
+  margin: 5%;
+}
+
+#img-timeout {
+  margin: 5%;
+  width: 50%;
+  height: 50%;
+}
+
+#opponent-playing {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0, 0, 0, 0.6);
+  visibility: hidden;
+}
+
+#opponent-playing:target {
+  visibility: visible;
+}
+
+#container-opponent-playing {
+  display: flex;
+  background: white;
+  border-radius: 10px;
+  width: 30%;
+  height: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 815px) {
+  #help-modal {
+    display: flex;
+    background: darkgray;
+    border-radius: 10px;
+    top: 1%;
+    left: 55%;
+  }
+
+  #main-board {
+    height: auto;
+  }
+
+  #button-leave {
+    padding: 0;
+  }
+
+  #leader-board h3 {
+    font-size: inherit;
+  }
+
+  #foot-main {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+
+  #leader-board {
+    grid-row: 1;   /* This line is for put the leave button bottom of leader board */
+    grid-template-columns: 1fr;
+  }
+
+  .player {
+    margin: 0;
+  }
+
+  #button-take-card {
+    font-size: smaller;
+  }
+
+  /* #turn-player {
+    margin-right: 5px;
+    margin-left: 5px;
+  } */
+
+  #question-modal {
+    height: auto;
+    background: none;
+  }
+
+  #button-container {
+    margin: 3%;
+  }
+
+  #container-modal {
+    border: 3px solid black;
+  }
+
+  #timeOut-question-modal {
+    top: 3%;
+    background: none;
+  }
+
+  .container-game-over {
+    border: 3px solid black;
+  }
+
+  .container-podium-modal {
+    border: 3px solid black;
+  }
+
+  .timeOut-question-modal {
+    border: 3px solid black;
+  }
+
+  #img-timeout {
+    margin: 0;
+    width: 40%;
+    height: 40%;
+  }
+
+  #podium-modal {
+    background: none;
+  }
+}
+
+@media (max-width: 625px) {
+  #circle-time {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+
+  #circle-time h2 {
+    margin: 0;
+  }
+
+  #button_gameOver_box {
+    width: 150px;
+  }
+}

@@ -1,0 +1,141 @@
+<% layout('layouts/MainLayout')%>		
+		<main id="main-lobby">
+				<article id="info-box" class="lobby-boxes">
+					<section class="session-info">
+						<div class="session-id-box">
+							<h3 class="session-number"></h3>
+							<small class="session-id-description">*send this id to invite other friends to join the session.</small>
+						</div>
+						<h3 class="username" id="guest-lobby-username"></h3>
+						<section class="session-guest-list">
+							<div class="number-of-guests-box">
+								<h3 class="guest-title">Number of players:</h3>
+								<h3 class="number-of-guests"></h3>
+							</div>
+							<ul class="guest-list">
+							</ul>
+						</section>
+					</section>
+					<div class="lobby-actions">
+						<button id="play-button">Play</button>
+						<button class="leave-button" id="leave-lobby">Leave</button>
+					</div>
+				</article>
+				<!-- Host session information panel -->
+
+				<article id="settings-box" class="lobby-boxes"> 
+
+					<div id="title">
+						<h3 class="settings-title">Settings can only be changed by the host of the session</h3>
+					</div>
+
+					<div id="options-container">
+
+						<section class="setting-field">
+
+							<h4 class="setting-option">Trivia:</h4>
+
+							<select class="select" id="enabledTrivia" >
+								<option value="enabled">Enabled</option>
+								<option value="disabled">Disabled</option>
+							</select>
+
+							<h6 class="setting-description">
+								Enable questions related to the colors in the board. Answer the questions correctly to progress in the match.
+							</h6>
+
+						</section>
+
+						<section class="setting-field">
+
+							<h4 class="setting-option">Time factor:</h4>
+
+							<input id="time-factor" type="number" step="any" min="1"/>
+
+							<h6 class="setting-description">
+								0 to disable time in questions
+							</h6>
+
+						</section>
+
+						<section class="setting-field">
+
+							<h4 class="setting-option">Question difficulty:</h4>
+
+							<select class="select" id="difficulty">
+								<option value="enabled">Incremental</option>
+								<option value="disabled">Random</option>
+							</select>
+
+							<h6 class="setting-description">
+								Incremental will increase the difficulty as you progress in the board. Random will show all questions mixed in terms of difficulty. 
+							</h6>
+
+						</section>
+
+						<section class="setting-field">
+
+							<h4 class="setting-option">Punish wrong answers:</h4>
+
+							<select class="select" id="punish">
+								<option value="enabled">Enabled</option>
+								<option value="disabled">Disabled</option>
+							</select>
+
+							<h6 class="setting-description">
+								If enabled, every time a player fails question must return to previous color available. Otherwise, nothing happens.
+							</h6>
+
+						</section>
+
+
+						<% /* <section class="setting-field">	
+
+							<h4 class="setting-option">Collaborative game:</h4>
+
+							<select class="select" id="collaborative">
+								<option value="enabled">Enabled</option>
+								<option value="disabled">Disabled</option>
+							</select>
+
+							<h6 class="setting-description">
+								Work as a team to prevent the Sunrise. Every time a player fails a question, the Sun moves on space.
+							</h6>
+
+						</section> */ %>
+
+					</div>
+
+					<section class="topic-settings">
+					
+						<section class="topic-settings-description">
+							<h4>Choose question topics:</h4>
+							<h5 id="question-topic-description">
+								Each color represents a category, 
+								select the ones you would like to include in the match.
+							</h5>
+						</section>
+						<section class="topic-boxes" id="topic-boxes-section">
+							<button class="topic-box" id="math-box">Mathematics Questions</button>
+							<button class="topic-box" id="science-box">Science Questions</button>
+							<button class="topic-box" id="history-box">History Questions</button>
+							<button class="topic-box" id="language-box">Language Questions</button>
+							<button class="topic-box" id="computer-box">Computer Science Questions</button>
+						</section>
+					
+				</section>
+				</article>
+				<!-- Host settings information panel -->
+			<!-- Host Lobby -->
+		</main> 
+		<!-- main-content -->
+
+		<article id="help-page" class="modal-help">
+			<button  class="button-x" onclick="location.href='#'">X</button>
+			<h2>Instructions</h2>
+			<div class="modal-help-content">
+				<p>
+					Configure the game with the different features available!
+				</p>
+			</div>
+		</article> <!-- help-page content -->

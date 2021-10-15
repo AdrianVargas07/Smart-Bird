@@ -1,0 +1,47 @@
+<% layout('layouts/MainLayout') %>	
+        <main class="main-content">
+            <div id="session-box">
+                <h2 id="session-box-title">Start Playing!</h2>
+                <button class="button-session-box" id="join-session-button">Join Session</button>
+                <button class="button-session-box" id="create-session-button">Create Session</button>   
+            </div>
+        </main> <!-- main-content -->
+
+        <article id="join-modal" class="modal-home">
+            <div class="join-modal-content">
+                <h2 class="modal-title">Welcome!</h2>
+                <input type="text" placeholder="Enter username..." class="input-modal" name="username-guest" id="username-guest"/>
+                <input type="text" placeholder="Enter session ID..." class="input-modal" name="session-id" id="session-id"/>
+                <div class="join-options">
+                    <button class="button-modal" id="button-join">Join</button>   
+                    <button class="button-modal" id="cancel-join-session">Cancel</button> 
+                </div>
+            </div>
+        </article>  <!-- join modal content -->
+
+        <article id="create-modal" class="modal-home">
+            <div class="join-modal-content">
+                <h2 class="modal-title">Welcome!</h2>
+                
+                <input type="text" placeholder="Enter username..." class="input-modal" name="username-host" id="username-host"/>
+                <div class="join-options">   
+                    <button class="button-modal" id="button-create">Create</button>   
+                    <button class="button-modal" id="cancel-create-session">Cancel</button> 
+                </div> 
+            </div>
+        </article>  <!-- create content -->
+
+        <article id="help-page" class="modal-help">
+            <button  class="button-x" onclick="location.href='#'">X</button>
+            <h2>Instruction</h2>
+            <div class="modal-help-content">
+                <p>
+                    To join an existing game session with the session ID press the button:
+                    <button class="button-blue" onclick="location.href='#join-modal'">Join Session</button>  
+                </p>
+                <p>
+                    To create a new game session press the button:
+                    <button class="button-blue" onclick="location.href='#create-modal'">Create Session</button>
+                </p>
+            </div>
+        </article> <!-- help-page content -->

@@ -1,0 +1,4 @@
+#Gitignore for Smart Bird project
+
+node_modules/
+log.tsv

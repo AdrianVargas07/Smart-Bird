@@ -1,0 +1,55 @@
+<% layout('layouts/MainLayout')%>
+        <main class="main-content">
+            <article id="credits">
+                <h2> Credits </h2>
+                <h3>Images used in Fly Bird Fly!</h3>
+                <div id="credits-column">
+                    <div class="list-credits"> 
+                        <div>
+                            <img class="credit-image" src="img/favicon.svg" alt="Web site favicon"/>
+                            <p>Icono Aves. (s. f.). [Illustration]. Icon-icons. https://icon-icons.com/es/icono/aves/98742</p>
+                        </div>
+    
+                        <div>
+                            <img class="credit-image" src="img/logo.png" alt="Web site logo"/>
+                            <p>Bird House free icon. (s. f.). [Ilustration]. flaticon. https://www.flaticon.com/free-icon/bird-house_1269295</p>
+                        </div>
+    
+                        <div>
+                            <img class="credit-image" src="img/background.png" alt="Web site icon"/>
+                            <p>wp5204110. (s. f.). [Ilustration]. WallpaperCave. https://wallpapercave.com/w/wp5204110</p>
+                        </div>
+    
+                        <div>
+                            <img class="credit-image" src="img/avatar.png" alt="Web site icon"/>
+                            <p>bluebird-clipart #3150950. (s. f.). [Ilustration]. Clipart Library. http://clipart-library.com/clipart/bluebird-clipart_3.htm</p>
+                        </div>
+                    </div>
+
+                    <div class="list-credits">
+                        <div>
+                            <img class="credit-image" src="img/sun.png" alt="Web site icon"/>
+                            <p>Happy Sun. (s. f.). [Ilustration]. tenor. https://tenor.com/es/ver/happy-sun-sunny-smiley-sun-gif-12851980</p>
+                        </div>
+    
+                        <div>
+                            <img class="credit-image" src="img/sad-bird.gif" alt="Web site icon"/>
+                            <p>Sad Baby GIF By Angry Birds. (s. f.). [Ilustration]. GIPHY. https://giphy.com/gifs/angrybirds-sad-angry-birds-red-Ti77ZY8Ivj4PVFl6em</p>
+                        </div>
+    
+                        <div>
+                            <img class="credit-image" src="img/timeout.jpg" alt="Web site icon"/>
+                            <p>Dead bird. (s. f.). [Ilustration]. Shutterstock. https://www.shutterstock.com/es/image-vector/cartoon-illustration-blue-bird-lying-ground-179703941</p>
+                        </div>
+    
+                        <div>
+                            <img id="image-css-validation" class="credit-image" src="img/vcss-blue.gif" alt="Web site icon"/>
+                            <p>World Wide Web Consortium (W3C). (s. f.). vcss-blue [Ilustration]. W3C. //jigsaw.w3.org/css-validator/images/vcss-blue</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button id="button-accept-credits" onclick="location.href='/'">Accept</button>
+
+            </article> <!-- Credits  -->
+        </main> <!-- main-content -->

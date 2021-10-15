@@ -1,0 +1,102 @@
+@import url(./common.css);
+
+#session-box {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  border: 3px solid gray;
+  background-color: white;
+  border-radius: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#session-box-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.button-session-box {
+  color: white;
+  font-size: large;
+  justify-content: center;
+  background-color: blue;
+  font-family: 'Righteous', cursive;
+  width: 200px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.button-session-box:hover {
+  cursor: pointer;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.form-join {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.button-modal {
+  color: white;
+  font-size: large;
+  width: 40%;
+  padding: 2%;
+  border-radius: 8px;
+}
+
+.button-modal:hover {
+  cursor: pointer;
+}
+
+.join-options {
+  display: flex;
+  width: 62%;
+  height: 40%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.modal-title {
+  height: 10%;
+}
+
+#button-join {
+  background-color: blue;
+}
+
+#button-create {
+  background-color: blue;
+}
+
+#cancel-join-session {
+  background-color: red;
+}
+
+#cancel-create-session {
+  background-color: red;
+}
+
+@media (max-width: 500px) {
+  #session-box-title {
+    font-size: large;
+  }
+
+  .button-session-box {
+    width: 150px;
+    font-size: medium;
+  }
+
+  #session-box {
+    padding: 10px;
+  }
+}

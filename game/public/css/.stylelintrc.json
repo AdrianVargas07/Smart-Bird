@@ -1,0 +1,8 @@
+{
+  "extends": "stylelint-config-standard",
+
+  "scripts": {
+    "lint" : "./node_modules/.bin/eslint"
+ }
+  
+}
