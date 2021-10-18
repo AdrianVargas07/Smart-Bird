@@ -93,3 +93,8 @@ A continuación se muestra una breve descripción del juego original que fue tom
 **Fin del juego:**
 
 1. Si todos los búhos llegan al nido antes de que la ficha del Sol llegue a la última casilla, es decir, antes de que amanezca, ¡has ganado!, pero si la ficha del Sol llega a su última casilla antes de que todos los búhos hayan llegado al nido, has perdido.
+
+## **Desarrolladores que han participado en el desarrollo de Smart Bird**
+- Adrián Vargas
+- Sergio Ortega
+- Daniela Quesada
